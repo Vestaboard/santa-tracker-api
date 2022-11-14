@@ -12,19 +12,15 @@ const getLocations = (start, end, remaining) => {
 
 app.get("/", (req, res) => {
   //Get times
-
   const startTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 19, 00, 00, 00);
   const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1, 07, 00, 00, 00);
   const time = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 19, 00, 00, 00);
 
   //   Validate Times
-  if (time < startTime || time > endTime) {
-    return res.status(400).json({ error: [{ msg: "Santa is sleeping, please try again later" }] });
-  }
+  if (time < startTime || time > endTime) return res.status(400).json({ error: [{ msg: "Santa is sleeping, please try again later" }] });
 
   //  find where santa is
   const timeRemaining = (endTime - time) / 1000;
-
   const locations = getLocations(startTime, endTime, timeRemaining);
 
   //   determine where santa is heading
