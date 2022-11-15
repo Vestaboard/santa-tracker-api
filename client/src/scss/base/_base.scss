@@ -4,11 +4,29 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Mountains of Christmas", cursive;
+}
+
 .st-background {
-  background-image: url("../../assets//background.jpeg");
+  background-image: url("../../assets//background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100vw;
+}
+
+.st-overlay {
+  pointer-events: none;
+  background-image: url("../../assets/snokeflakes.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }

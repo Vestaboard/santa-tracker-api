@@ -23,8 +23,9 @@ const distanceInKm = (lat1, lon1, lat2, lon2) => {
 
 app.get("/api/getSantaLocation", (req, res) => {
   //Get times
-  const startTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 16, 00, 00, 00);
-  const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1, 04, 00, 00, 00);
+  const startTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 07, 00, 00, 00);
+  const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 19, 00, 00, 00);
+  // const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1, 19, 00, 00, 00);
   const time = new Date();
 
   //   Validate Times
@@ -42,7 +43,7 @@ app.get("/api/getSantaLocation", (req, res) => {
   const lat = locations.previousLocation.lat + (locations.nextLocation.lat - locations.previousLocation.lat) * (secondsRemaining / 136);
   const lng = locations.previousLocation.lng + (locations.nextLocation.lng - locations.previousLocation.lng) * (secondsRemaining / 136);
 
-  res.json({ lng, lat, data: locations });
+  res.json({ lng, lat });
 });
 app.listen(3001, () => {
   console.log("Server running on port 3001");
