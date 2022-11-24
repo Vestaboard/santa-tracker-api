@@ -4,7 +4,7 @@ This an API that tracks santa location 7pm on the 24th and 7am on the 25th.
 ## Installiation
 1) Download the Github Repo 
 ```
-git clone https://github.com/matthew-boston/santa-tracker.git
+git clone https://github.com/matthew-boston/santa-tracker-api.git
 ```
 
 > 📚 Note 
