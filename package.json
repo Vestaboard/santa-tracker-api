@@ -4,9 +4,7 @@
   "description": "Santa Tracker API",
   "main": "server.js",
   "scripts": {
-    "client": "npm start --prefix client",
-    "server": "nodemon server.js",
-    "start": "concurrently \"npm run server \" \"npm run client \""
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +18,6 @@
   "homepage": "https://github.com/matthew-boston/santa-tracker#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "concurrently": "^7.0.0",
     "express-validator": "^6.14.2",
     "nodemon": "^2.0.20"
   }
