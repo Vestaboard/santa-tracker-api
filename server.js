@@ -23,8 +23,8 @@ const distanceInKm = (lat1, lon1, lat2, lon2) => {
 
 app.get("/api/getSantaLocation", (req, res) => {
   //Get times
-  const startTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 07, 00, 00, 00);
-  const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 19, 00, 00, 00);
+  const startTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 10, 00, 00, 00);
+  const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 22, 00, 00, 00);
   // const endTime = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1, 19, 00, 00, 00);
   const time = new Date();
 
