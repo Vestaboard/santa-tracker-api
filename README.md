@@ -1,24 +1,24 @@
-## Santa Tracker
-This an API that tracks santa location 7pm on the 24th and 7am on the 25th. 
+# Santa Tracker
+This is a tutorial repo for the computing society. Developed by @matthew-boston & @Aaron-Riley
 
-## Installiation
+# Installiation
 1) Download the Github Repo 
 ```
 git clone https://github.com/matthew-boston/santa-tracker-api.git
 ```
-
-> 📚 Note 
->
-> If Repo already clone run: `git pull`
 
 2) Install all dependencies
 ```
 npm i 
 ```
 
-## Running API
+3) Run Api Locally
 To run the API navigate into the folder and run:
 ```
 npm run start
 ```
-This deploy a server for the API, once running you will be able to use the API
+This deploy a server for the API, once running you will be able to use the API.
+
+
+# Liences
+This is free to use and modify for educational purposes. If you want to use this repo in production please contact: mj.boston02@gmail.com
